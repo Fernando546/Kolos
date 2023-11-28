@@ -2,9 +2,8 @@ import java.util.*;
 
 public class GrupaAkademicka {
     ArrayList<Student> lista_studentow = new ArrayList<Student>();
-    public Student setStudent(Student student){
+    public void setStudent(Student student){
         lista_studentow.add(student);
-        return student;
     }
     public void wypisz(){
         for (Student student : lista_studentow){
