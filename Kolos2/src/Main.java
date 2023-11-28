@@ -7,9 +7,8 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             tab[i] = ram.nextInt(73) + 17;
         }
-        int bat[] = new int[10];
+        int bat[] = tab.clone();
         for (int i = 0; i < 10; i++) {
-            bat[i] = tab[i];
             System.out.println(bat[i]);
         }
     }
