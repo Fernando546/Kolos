@@ -44,20 +44,8 @@ public class Student{
         this.szkolenie_bhp = szkolenie_bhp;
     }
     public void BHP(){
-        if (!szkolenie_BHP){
+        if (!szkolenie_bhp){
             System.out.println("Smiec nie zrobil BHP");
         }
-    }
-
-    public static void main(String[] args) {
-        Student student1 = new Student("Jan", "Kowal", 123456, "1ID22A", false);
-        Student student2 = new Student("Janusz", "Kowalski", 123456, "1ID22A", false);
-        Student student3 = new Student("Januszeks", "Kowalsky", 123456, "1ID22A", false);
-
-        GrupaAkademicka grupa = new GrupaAkademicka();
-        grupa.setStudent(student1);
-        grupa.setStudent(student2);
-        grupa.setStudent(student3);
-        grupa.wypisz();
     }
 }
