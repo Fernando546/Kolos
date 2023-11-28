@@ -1,9 +1,9 @@
-private class Student{
-    String imie;
-    String nazwisko;
-    int numer_indexu;
-    String grupa_dziekanska;
-    boolean szkolenie_bhp;
+public class Student{
+    private String imie;
+    private String nazwisko;
+    private int numer_indexu;
+    private String grupa_dziekanska;
+    private boolean szkolenie_bhp;
 
     public Student(String imie, String nazwisko, int numer_indexu, String grupa_dziekanska, boolean szkolenie_bhp){
         this.imie = imie;
@@ -44,7 +44,7 @@ private class Student{
         this.szkolenie_bhp = szkolenie_bhp;
     }
     public void BHP(){
-        if (getSzkolenie_bhp() == false){
+        if (!szkolenie_BHP){
             System.out.println("Smiec nie zrobil BHP");
         }
     }
